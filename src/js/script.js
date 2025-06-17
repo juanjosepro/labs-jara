@@ -1,5 +1,7 @@
 // Mobile Navigation Toggle
+console.log('working')
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('content loaded')
   const body = document.querySelector('body');
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
