@@ -1,0 +1,33 @@
+
+.faq {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  padding: 2rem;
+  background: var(--light-gray);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.faq-question {
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.faq-answer {
+  color: var(--text-color);
+  line-height: 1.6;
+}

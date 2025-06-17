@@ -1,0 +1,25 @@
+
+@media print {
+  .header,
+  .footer,
+  .nav,
+  .btn {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .page-hero {
+    padding: 20px 0;
+    background: none;
+    color: var(--heading-color);
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+}
