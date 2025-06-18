@@ -189,36 +189,43 @@ logger.error = (msg, options) => {
 	loggerError(msg, options);
 }
 
-export default defineConfig({
-	customLogger: logger,
-	plugins: [
-		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
-		react(),
-		addTransformIndexHtml
-	],
-	server: {
-		host: true,
-    port: 3000,
-		cors: true,
-		headers: {
-			'Cross-Origin-Embedder-Policy': 'credentialless',
+	export default defineConfig({
+		customLogger: logger,
+		plugins: [
+			...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
+			react(),
+			addTransformIndexHtml
+		],
+		server: {
+			host: true,
+			port: 3000,
+			cors: true,
+			headers: {
+				'Cross-Origin-Embedder-Policy': 'credentialless',
+			},
+			allowedHosts: true,
 		},
-		allowedHosts: true,
-	},
-	resolve: {
-		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
-		alias: {
-			'@': path.resolve(__dirname, './src'),
+		resolve: {
+			extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
+			alias: {
+				'@': path.resolve(__dirname, './src'),
+			},
 		},
-	},
-	build: {
-		rollupOptions: {
-			external: [
-				'@babel/parser',
-				'@babel/traverse',
-				'@babel/generator',
-				'@babel/types'
-			]
+		build: {
+			rollupOptions: {
+				input: {
+					main: resolve(__dirname, 'index.html'),
+					'sobre-nostros': resolve(__dirname, 'sobre-nostros.html'),
+					contacto: resolve(__dirname, 'contacto.html'),
+					resultados: resolve(__dirname, 'resultados.html'),
+					servicios: resolve(__dirname, 'servicios.html'),
+				},
+				external: [
+					'@babel/parser',
+					'@babel/traverse',
+					'@babel/generator',
+					'@babel/types'
+				]
+			}
 		}
-	}
-});
+	});
