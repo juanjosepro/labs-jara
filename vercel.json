@@ -1,10 +1,22 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/$1.html"
+      "src": "/sobre-nosotros",
+      "dest": "/sobre-nosotros.html"
+    },
+    {
+      "src": "/servicios", 
+      "dest": "/servicios.html"
+    },
+    {
+      "src": "/contacto",
+      "dest": "/contacto.html"
+    },
+    {
+      "src": "/resultados",
+      "dest": "/resultados.html"
     }
   ],
   "cleanUrls": true
-  
+
 }
