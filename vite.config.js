@@ -193,7 +193,7 @@ logger.error = (msg, options) => {
 		customLogger: logger,
 		plugins: [
 			...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
-			react(),
+			// react(),
 			addTransformIndexHtml
 		],
 		server: {
