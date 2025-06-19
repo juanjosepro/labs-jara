@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta tus resultados de laboratorio MedLab de forma segura y confidencial. Acceso rápido a tus análisis clínicos.">
+  <meta name="keywords" content="resultados laboratorio, consultar resultados, análisis clínicos online">
+  <title>Resultados - Laboratorio Clínico MedLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+  <%- headerContent %>
+
+  <main>
+    <!-- Hero Section -->
+    <!-- <section class="bg-gradient-to-br from-primary/10 via-white to-secondary/5 py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl lg:text-6xl font-bold text-secondary mb-6">Sobre Nosotros</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Más de 15 años comprometidos con la excelencia en análisis clínicos, brindando resultados precisos y confiables para cuidar tu salud.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Historia Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-secondary mb-6">Nuestra Historia</h2>
+            <div class="space-y-6 text-gray-600">
+              <p class="text-lg leading-relaxed">
+                MedLab nació en 2009 con la visión de revolucionar los análisis clínicos en nuestra región. Fundado por un equipo de profesionales apasionados por la medicina de laboratorio, comenzamos como un pequeño laboratorio con grandes sueños.
+              </p>
+              <p class="text-lg leading-relaxed">
+                A lo largo de los años, hemos crecido constantemente, incorporando tecnología de vanguardia y expandiendo nuestros servicios. Hoy somos reconocidos como uno de los laboratorios más confiables y precisos de la región.
+              </p>
+              <p class="text-lg leading-relaxed">
+                Nuestro compromiso con la calidad y la innovación nos ha permitido establecer alianzas estratégicas con instituciones médicas de prestigio y mantenernos a la vanguardia en técnicas de diagnóstico.
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl p-8">
+              <img  class="w-full h-96 object-cover rounded-2xl shadow-2xl" alt="Historia del laboratorio MedLab desde sus inicios" src="https://images.unsplash.com/photo-1701848055770-effbdb148e15" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-4">Nuestra Misión</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Proporcionar servicios de análisis clínicos de la más alta calidad, utilizando tecnología avanzada y manteniendo los estándares más rigurosos, para contribuir al diagnóstico preciso y oportuno que mejore la salud y calidad de vida de nuestros pacientes.
+            </p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-secondary mb-4">Nuestra Visión</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Ser el laboratorio clínico líder en la región, reconocido por nuestra excelencia técnica, innovación constante y compromiso con la salud comunitaria, estableciendo nuevos estándares en medicina de laboratorio y diagnóstico clínico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-secondary mb-4">Nuestros Valores</h2>
+          <p class="text-xl text-gray-600">Los principios que guían cada una de nuestras acciones</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/30 group-hover:to-primary/40 transition-all">
+              <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary mb-3">Precisión</h3>
+            <p class="text-gray-600">Exactitud en cada análisis y resultado que entregamos</p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/30 group-hover:to-primary/40 transition-all">
+              <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary mb-3">Compromiso</h3>
+            <p class="text-gray-600">Dedicación total con la salud de nuestros pacientes</p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/30 group-hover:to-primary/40 transition-all">
+              <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary mb-3">Innovación</h3>
+            <p class="text-gray-600">Tecnología de vanguardia para mejores resultados</p>
+          </div>
+
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-primary/30 group-hover:to-primary/40 transition-all">
+              <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary mb-3">Integridad</h3>
+            <p class="text-gray-600">Transparencia y ética en todas nuestras acciones</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- footerContent %>
+
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+</html>

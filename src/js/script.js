@@ -1,28 +1,25 @@
 // Mobile Navigation Toggle
 console.log('working')
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('content loaded')
   const body = document.querySelector('body');
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
 
   if (navToggle && navMenu) {
-    console.log('first')
     navToggle.addEventListener('click', function() {
       body.classList.toggle('no-scroll');
-      console.log('second')
       navToggle.classList.toggle('active');
       navMenu.classList.toggle('nav-active');
     });
 
     // Close menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navMenu.classList.remove('nav-active');
-      });
-    });
+    // const navLinks = document.querySelectorAll('.nav-link');
+    // navLinks.forEach(link => {
+    //   link.addEventListener('click', () => {
+    //     navToggle.classList.remove('active');
+    //     navMenu.classList.remove('nav-active');
+    //   });
+    // });
 
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
@@ -479,13 +476,30 @@ window.addEventListener('resize', () => {
 
 // Activar los link dependiendo en que pagina este nav
 const currentPage = location.pathname.split("/").pop(); // ejemplo: "index.html"
-  const links = document.querySelectorAll("a.nav-link");
+const links = document.querySelectorAll("a.nav-link");
+// console.log(currentPage)
 
-  links.forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
-      link.setAttribute("data-active", "true");
-    } else {
-      link.removeAttribute("data-active");
-    }
-  });
+function normalizePath(path) {
+  // Elimina ".html" del final si existe
+  if (path.endsWith('.html')) {
+    return path.slice(0, -5); // -5 para remover ".html"
+  }
+  return path;
+}
+
+// Normaliza la página actual
+const normalizedCurrentPage = normalizePath(currentPage);
+// console.log('Normalized Current Page:', normalizedCurrentPage);
+
+links.forEach(link => {
+  let linkPage = link.getAttribute("data-link");
+  // console.log('linkPage', linkPage)
+  const normalizedLinkPage = normalizePath(linkPage);
+  // console.log('Normalized Link Page:', normalizedLinkPage);
+
+  if (normalizedLinkPage === normalizedCurrentPage || (currentPage === "" && linkPage === "index.html")) {
+    link.setAttribute("data-active", "true");
+  } else {
+    link.removeAttribute("data-active");
+  }
+});

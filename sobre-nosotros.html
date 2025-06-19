@@ -14,199 +14,55 @@
 </head>
 <body class="bg-white text-textColor">
 
-  <header id="header" class="bg-white shadow-md header-transition">
-    <div id="top-bar" class="bg-top-bar-bg py-2 border-b border-borderColorCustom header-transition overflow-hidden">
-      <div class="container mx-auto flex justify-between items-start lg:items-center px-5">
-        <div class="flex flex-col lg:flex-row lg:tems-center gap-[2px] lg:gap-0 lg:space-x-2 text-sm">
-          <a href="tel:+123456789" class="flex items-center gap-1 text-top-bar-text hover:text-primary transition-colors">
-            <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" 
-                   width="16" height="16" viewBox="0 0 24 24" 
-                   stroke-width="2" 
-                   stroke-linecap="round" 
-                   stroke-linejoin="round"
-                   class="w-5 h-5 fill-current text-primary group-hover:text-white transition-colors duration-300">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 
-                         19.79 19.79 0 0 1-8.63-3.07 
-                         19.5 19.5 0 0 1-6-6 
-                         19.79 19.79 0 0 1-3.07-8.67
-                         A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 
-                         12.84 12.84 0 0 0 .7 2.81 
-                         2 2 0 0 1-.45 2.11L8.09 9.91
-                         a16 16 0 0 0 6 6l1.27-1.27
-                         a2 2 0 0 1 2.11-.45
-                         12.84 12.84 0 0 0 2.81.7 
-                         A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            Llámanos: +51 900 000 000
-          </a>
-          <span class="hidden lg:block text-top-bar-text">|</span>
-          <a href="mailto:hello@example.com" class="flex items-center gap-1 text-top-bar-text hover:text-primary transition-colors">
-            
-            <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="16" height="16" viewBox="0 0 24 24"
-                   fill="none"
-                   stroke="currentColor"
-                   stroke-width="2"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   class="w-5 h-5 stroke-current text-primary group-hover:text-white transition-colors duration-300">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-            Email: jara@gmail.com
-          </a>
-        </div>
-        <div class="flex items-center space-x-2">
-          <!-- Facebook -->
-          <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-            <a href="#" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="18" height="18" viewBox="0 0 24 24"
-                   fill="none"
-                   stroke="currentColor"
-                   stroke-width="2"
-                   stroke-linecap="round"
-                   stroke-linejoin="round"
-                   class="stroke-current text-primary group-hover:text-white transition-colors duration-300">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-              </svg>
-            </a>
-          </div>
-        
-          <!-- Twitter -->
-          <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-            <a href="#" aria-label="Twitter">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="18" height="18" viewBox="0 0 24 24"
-                   fill="currentColor"
-                   class="fill-current text-primary group-hover:text-white transition-colors duration-300">
-                <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"/>
-              </svg>
-            </a>
-          </div>
-        
-          <!-- YouTube -->
-          <!-- <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-            <a href="#" aria-label="YouTube">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="18" height="18" viewBox="0 0 24 24"
-                   fill="currentColor"
-                   class="fill-current text-primary group-hover:text-white transition-colors duration-300">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z"/>
-              </svg>
-            </a>
-          </div> -->
-
-          <!-- LinkedIn -->
-          <div class="group bg-primary/20 hover:bg-primary rounded-full p-1.5 inline-flex items-center justify-center transition-colors duration-300">
-            <a href="#" aria-label="LinkedIn">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-current text-primary group-hover:text-white transition-colors duration-300"
-              >
-                <path d="M116.504,500.219V170.654H6.975v329.564H116.504zM61.751,125.674c38.183,0,61.968-25.328,61.968-56.953
-                  c-0.722-32.328-23.785-56.941-61.252-56.941C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751z
-                  M177.124,500.219c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533
-                  c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531
-                  c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <nav id="main-nav" class="lg:container mx-auto flex justify-between items-center h-20 pr-5 lg:pr-0 lg:px-5 header-transition">
-      <div class="nav-brand-clipped bg-primary h-full flex items-center px-8">
-        <a href="index.html" class="flex items-center">
-          <img data-src="./image.png" alt="MedLab Logo" class="h-10 mr-2 filter brightness-0 invert" src="https://images.unsplash.com/photo-1684248643903-679f6311c9d5" />
-          <h2 class="text-3xl font-bold text-white">Jara</h2>
-        </a>
-      </div>
-      <ul id="nav-menu" class="nav-menu -translate-y-96 transition-all duration-300 lg:translate-y-0 lg:flex items-center space-x-2">
-        <li><a href="index.html" class="px-4 py-2 text-headingColor font-medium hover:text-primary hover:bg-primary/20 rounded">Inicio</a></li>
-        <li class="relative group">
-          <a class="cursor-pointer px-4 py-2 text-headingColor font-medium hover:text-primary hover:bg-primary/20 rounded flex items-center  relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/5 after:h-0.5 after:bg-primary after:opacity-0 hover:after:opacity-100 data-[active=true]:text-primary data-[active=true]:after:opacity-100" data-active="true">Sobre Nosotros +</a>
-          <ul class="absolute left-0 mt-0 w-48 bg-white shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 pt-1">
-            <li><a href="sobre-nosotros.html#style-one" class="block px-4 py-2 text-sm text-headingColor hover:bg-primary hover:text-white">Quienes Somos</a></li>
-            <li><a href="sobre-nosotros.html#style-two" class="block px-4 py-2 text-sm text-headingColor hover:bg-primary hover:text-white">Mision y Visión</a></li>
-          </ul>
-        </li>
-        <li class="relative group">
-          <a  class="cursor-pointer px-4 py-2 text-headingColor font-medium hover:text-primary hover:bg-primary/20 rounded flex items-center">Servicios +</a>
-          <ul class="absolute left-0 mt-0 w-48 bg-white shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 pt-1">
-            <li><a href="servicios.html#hematologia" class="block px-4 py-2 text-sm text-headingColor hover:bg-primary hover:text-white">Hematología</a></li>
-            <li><a href="servicios.html#bioquimica" class="block px-4 py-2 text-sm text-headingColor hover:bg-primary hover:text-white">Bioquímica</a></li>
-          </ul>
-        </li>
-        <li><a href="contacto.html" class="px-4 py-2 text-headingColor font-medium hover:text-primary hover:bg-primary/20 rounded">Contacto</a></li>
-        <li><a href="resultados.html" class="px-4 py-2 text-headingColor font-medium hover:text-primary hover:bg-primary/20 rounded">Obtener una cita</a></li>
-      </ul>
-      <div class="flex items-center">
-        <a href="resultados.html" class="btn btn-primary hidden lg:inline-flex">Verificar Resultados</a>
-        <button id="nav-toggle" class="lg:hidden nav-toggle" aria-label="Abrir menú de navegación">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-    <div id="mobile-menu-container" class="lg:hidden"></div>
-  </header>
+  <%- headerContent %>
 
   <main>
-    <section class="bg-gradient-to-r from-primary to-green-600 py-16 text-white text-center">
+    <!-- Hero Section -->
+    <!-- <section class="bg-gradient-to-r from-primary to-green-600 py-16 text-white text-center">
       <div class="container mx-auto px-5">
         <h1 class="text-4xl lg:text-5xl font-bold mb-4">Sobre Nosotros</h1>
         <p class="text-lg lg:text-xl max-w-3xl mx-auto opacity-90">
           Conoce nuestra historia, misión y el equipo de profesionales que hace posible brindar servicios de laboratorio clínico de excelencia.
         </p>
       </div>
-    </section>
+    </section> -->
 
-    <section id="style-one" class="py-20 bg-white">
+    <!-- Historia -->
+    <section id="style-one" class="py-20 bg-gradient-to-r from-primary to-green-600 text-white">
       <div class="container mx-auto px-5">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-3xl lg:text-4xl font-bold text-headingColor mb-6">Nuestra Historia</h2>
-            <p class="text-lg text-textColor mb-4 leading-relaxed">
-              Desde 2004, MedLab ha sido pionero en servicios de análisis clínicos especializados, estableciendo nuevos estándares de calidad y precisión en el diagnóstico médico. Nuestra trayectoria de más de dos décadas nos respalda como líderes en el sector.
+            <h2 class="text-3xl lg:text-4xl font-bold text-headingColor mb-6">Sobre Nosotros</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+              En <strong>Laboratorios Jara</strong>, nos dedicamos a la excelencia en el diagnóstico y al cuidado integral de su salud. Con una trayectoria de 20 años y un compromiso inquebrantable con la precisión, somos su aliado confiable en el camino hacia el bienestar.
             </p>
-            <p class="text-lg text-textColor mb-8 leading-relaxed">
+            <!-- <p class="text-lg mb-8 leading-relaxed">
               Comenzamos como un pequeño laboratorio con la visión de revolucionar la atención médica a través de tecnología avanzada y un enfoque centrado en el paciente. Hoy somos reconocidos por nuestra excelencia y compromiso inquebrantable con la salud.
-            </p>
+            </p> -->
             <div class="flex flex-col sm:flex-row gap-8 text-center">
               <div>
-                <span class="block text-4xl font-bold text-primary">20+</span>
-                <span class="text-sm text-textColor">Años de Experiencia</span>
+                <span class="block text-4xl font-bold text-headingColor">20+</span>
+                <span class="text-sm">Años de Experiencia</span>
               </div>
               <div>
-                <span class="block text-4xl font-bold text-primary">15,000+</span>
-                <span class="text-sm text-textColor">Pacientes Atendidos</span>
+                <span class="block text-4xl font-bold text-headingColor">15,000+</span>
+                <span class="text-sm">Pacientes Atendidos</span>
               </div>
               <div>
-                <span class="block text-4xl font-bold text-primary">50+</span>
-                <span class="text-sm text-textColor">Tipos de Análisis</span>
+                <span class="block text-4xl font-bold text-headingColor">50+</span>
+                <span class="text-sm">Tipos de Análisis</span>
               </div>
             </div>
           </div>
           <div>
-            <img  src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratorio moderno con equipos de última generación" class="w-full h-auto max-h-[400px] object-cover rounded shadow-lg" src="https://images.unsplash.com/photo-1657778752500-9da406aa813f" />
+            <img src="https://images.unsplash.com/photo-1607398027635-ef1b467144f5" alt="Laboratorio moderno con equipos de última generación" class="w-full h-auto max-h-[400px] object-cover rounded shadow-lg" src="https://images.unsplash.com/photo-1657778752500-9da406aa813f" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="style-two" class="py-20 bg-lightGray">
+    <!-- Misión y Visión -->
+    <!-- <section id="style-two" class="py-20 bg-lightGray">
       <div class="container mx-auto px-5">
         <div class="grid md:grid-cols-2 gap-12">
           <div class="bg-white p-10 rounded shadow-md text-center">
@@ -229,8 +85,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <!-- Valores -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-5">
         <h2 class="section-title-text mb-16">Nuestros Valores</h2>
@@ -255,30 +112,55 @@
       </div>
     </section>
 
-    <section class="py-20 bg-lightGray">
-      <div class="container mx-auto px-5">
-        <h2 class="section-title-text mb-16">Nuestro Equipo Directivo</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-          <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <img  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Roberto Silva - Director Médico" class="w-full h-72 object-cover" src="https://images.unsplash.com/photo-1576671081741-c538eafccfff" />
-            <div class="p-8">
-              <h3 class="text-2xl font-semibold text-headingColor mb-1">Dr. Roberto Silva</h3>
-              <p class="text-primary font-medium mb-3">Director Médico</p>
-              <p class="text-textColor leading-relaxed">Especialista en Patología Clínica con más de 25 años de experiencia en diagnóstico de laboratorio y gestión de calidad.</p>
+    <!-- Equipo -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-secondary mb-4">Nuestro Equipo</h2>
+          <p class="text-xl text-gray-600">Profesionales altamente capacitados comprometidos con tu salud</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+            <div class="relative">
+              <img  class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Dra. María González, Directora Médica" src="https://images.unsplash.com/photo-1690544253847-6f24926a627c" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-secondary mb-2">Dra. María González</h3>
+              <p class="text-primary font-medium mb-3">Directora Médica</p>
+              <p class="text-gray-600 text-sm">Especialista en Patología Clínica con más de 20 años de experiencia en medicina de laboratorio.</p>
             </div>
           </div>
-          <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <img  src="https://medic.mhrtheme.com/wp-content/uploads/2022/10/doctor-6.jpg" alt="Dra. Carmen López - Directora de Calidad" class="w-full h-72 object-cover" src="https://images.unsplash.com/photo-1690544253847-6f24926a627c" />
-            <div class="p-8">
-              <h3 class="text-2xl font-semibold text-headingColor mb-1">Dra. Carmen López</h3>
-              <p class="text-primary font-medium mb-3">Directora de Calidad</p>
-              <p class="text-textColor leading-relaxed">Bioquímica con especialización en control de calidad y acreditación de laboratorios clínicos según estándares internacionales.</p>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+            <div class="relative">
+              <img  class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Dr. Carlos Mendoza, Jefe de Hematología" src="https://images.unsplash.com/photo-1576671081741-c538eafccfff" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-secondary mb-2">Dr. Carlos Mendoza</h3>
+              <p class="text-primary font-medium mb-3">Jefe de Hematología</p>
+              <p class="text-gray-600 text-sm">Especialista en Hematología Clínica, experto en análisis de sangre y trastornos hematológicos.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+            <div class="relative">
+              <img  class="w-full h-64 object-cover group-hover:scale-105 transition-transform" alt="Lic. Ana Rodríguez, Coordinadora de Calidad" src="https://images.unsplash.com/photo-1578496479914-7ef3b0193be3" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-secondary mb-2">Lic. Ana Rodríguez</h3>
+              <p class="text-primary font-medium mb-3">Coordinadora de Calidad</p>
+              <p class="text-gray-600 text-sm">Licenciada en Bioquímica, responsable de mantener los más altos estándares de calidad.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Certificaciones -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-5">
         <h2 class="section-title-text mb-16">Certificaciones y Acreditaciones</h2>
@@ -307,47 +189,53 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonios -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-secondary mb-4">Lo Que Dicen Nuestros Pacientes</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            La confianza y satisfacción de nuestros pacientes es nuestra mayor recompensa.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-xl border border-primary/20 hover-lift">
+            <div class="flex items-center mb-4">
+              <img class="w-12 h-12 rounded-full mr-4 object-cover" alt="Foto de perfil de Ana Pérez, paciente satisfecha" src="https://images.unsplash.com/photo-1688227940707-90e59bdb4747">
+              <div>
+                <h4 class="font-semibold text-secondary">Ana Pérez</h4>
+                <p class="text-sm text-primary">Paciente de Hematología</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"El personal de MedLab fue increíblemente amable y profesional. Me explicaron todo el proceso y los resultados fueron rápidos y claros. ¡Totalmente recomendados!"</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-xl border border-primary/20 hover-lift">
+            <div class="flex items-center mb-4">
+              <img class="w-12 h-12 rounded-full mr-4 object-cover" alt="Foto de perfil de Carlos López, paciente satisfecho" src="https://images.unsplash.com/photo-1652376252884-b883c5aed48a">
+              <div>
+                <h4 class="font-semibold text-secondary">Carlos López</h4>
+                <p class="text-sm text-primary">Paciente de Bioquímica</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"Necesitaba unos análisis urgentes y MedLab me atendió de maravilla. La tecnología que usan es de primera y me sentí muy seguro. Los resultados online son muy prácticos."</p>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-xl border border-primary/20 hover-lift">
+            <div class="flex items-center mb-4">
+              <img class="w-12 h-12 rounded-full mr-4 object-cover" alt="Foto de perfil de Laura Gómez, paciente satisfecha" src="https://images.unsplash.com/photo-1688227940707-90e59bdb4747">
+              <div>
+                <h4 class="font-semibold text-secondary">Laura Gómez</h4>
+                <p class="text-sm text-primary">Paciente de Perfil Hormonal</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"Excelente atención desde que llegué hasta que recibí mis resultados. El equipo médico es muy competente y las instalaciones son impecables. Definitivamente mi laboratorio de confianza."</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-secondary text-white pt-16 pb-8">
-    <div class="container mx-auto px-5">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-        <div>
-          <h3 class="text-2xl font-bold text-primary mb-4">MedLab</h3>
-          <p class="text-gray-400 leading-relaxed">Laboratorio clínico líder en análisis especializados con más de 20 años de experiencia brindando servicios de calidad excepcional.</p>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h4>
-          <ul class="space-y-2">
-            <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Inicio</a></li>
-            <li><a href="sobre-nosotros.html" class="text-gray-400 hover:text-primary transition-colors">Sobre Nosotros</a></li>
-            <li><a href="servicios.html" class="text-gray-400 hover:text-primary transition-colors">Servicios</a></li>
-            <li><a href="resultados.html" class="text-gray-400 hover:text-primary transition-colors">Resultados</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-4">Servicios</h4>
-          <ul class="space-y-2">
-            <li><a href="servicios.html#hematologia" class="text-gray-400 hover:text-primary transition-colors">Hematología</a></li>
-            <li><a href="servicios.html#bioquimica" class="text-gray-400 hover:text-primary transition-colors">Bioquímica</a></li>
-            <li><a href="servicios.html#microbiologia" class="text-gray-400 hover:text-primary transition-colors">Microbiología</a></li>
-            <li><a href="servicios.html#cardiologia" class="text-gray-400 hover:text-primary transition-colors">Cardiología</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-4">Contacto</h4>
-          <address class="not-italic text-gray-400 space-y-2">
-            <p>📍 Av. Principal 123, Ciudad</p>
-            <p>📞 +1 (555) 123-4567</p>
-            <p>✉️ info@medlab.com</p>
-          </address>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 pt-8 text-center">
-        <p class="text-gray-500">&copy; 2024 MedLab. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
+  <%- footerContent %>
 
   <script type="module" src="./src/js/script.js"></script>
 </body>

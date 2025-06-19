@@ -109,6 +109,10 @@
 .nav-menu.nav-active > li.relative.group > ul li{
   padding: 8px 0
 }
+.nav-menu.nav-active > li.relative.group > a[data-active="true"]::after {
+  left: 18px;
+  transform: none;
+}
 .nav-menu.nav-active + div .nav-toggle {
   position: absolute;
   top: 40px;
